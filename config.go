@@ -12,12 +12,4 @@ type Config struct {
 	ConcurrentMessageHandling bool          // Handle messages from sessions concurrently.
 }
 
-func newConfig() *Config {
-	return &Config{
-		WriteWait:         10 * time.Second,
-		PongWait:          60 * time.Second,
-		PingPeriod:        54 * time.Second,
-		MaxMessageSize:    512,
-		MessageBufferSize: 256,
-	}
-}
+func newConfig() *Config { _ = "STUB: not implemented"; return nil }
